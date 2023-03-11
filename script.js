@@ -1,24 +1,4 @@
 
-Create Form and CRUD.
-
-
-mayuri1482@tnraocollege.org
-Creating a form with validation and performing CRUD operations on local storage involves designing a web form that allows users to enter data, and then storing that data in the browser's local storage. .saved record should be saved in table and from there user should be able to edit and delete re...
-
-To create a form with validation and perform CRUD operations on local storage, you will need to follow these steps:
-
-Design the form: The first step is to design the form that will allow users to enter data. The form should include input fields for all the necessary information, and it should also include validation rules to ensure that the data entered is valid. This can be achieved using HTML, CSS, and JavaScript.
-
-Save data to local storage: Once the user enters data into the form, the data needs to be saved to the browser's local storage. This can be done using JavaScript's localStorage API. You can create a key-value pair in localStorage to store the data.
-
-Display saved records in a table: After the data is saved to local storage, you can retrieve it and display it in a table using JavaScript. You can use the DOM to create a table and append rows to it for each saved record.
-
-Edit and delete records: To allow users to edit or delete records, you can add buttons to each row in the table. Clicking the edit button should populate the form with the data for that record, and clicking the delete button should remove the record from local storage and update the table.
-
-Here's an example code snippet that demonstrates how to implement these steps:
-
-html
-Copy code
 <!-- HTML form -->
 <form id="myForm">
   <label for="name">Name:</label>
@@ -35,12 +15,7 @@ Copy code
       <th>Name</th>
       <th>Email</th>
       <th>Action</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
-
-<script>
+  
   const form = document.querySelector('#myForm');
   const tableBody = document.querySelector('#myTable tbody');
 
